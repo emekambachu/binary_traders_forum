@@ -11,6 +11,6 @@
 <p>We look forward to seeing you on the platform.<br><br>
 
 <p align="center">Need more information?<br>
-    Please contact <strong>info@digitalmetricsinvest.com</strong>.</p>
+    Please contact <strong>info@binarytradersforum.com</strong>.</p>
 
 

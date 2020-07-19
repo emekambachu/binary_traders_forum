@@ -14,7 +14,7 @@ class InvestmentController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function index()
     {
@@ -33,7 +33,7 @@ class InvestmentController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function create()
     {
@@ -90,9 +90,9 @@ class InvestmentController extends Controller
 
         // Send Email to registered User
         Mail::send('emails.add-new-investment', $data, static function ($message) use ($data) {
-            $message->from('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
-            $message->to($data['email'], $data['name'])->cc('info@digitalmetricsinvest.com');
-            $message->replyTo('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->from('info@binarytradersforum.com', 'Binary Traders Forum');
+            $message->to($data['email'], $data['name'])->cc('info@binarytradersforum.com');
+            $message->replyTo('info@binarytradersforum.com', 'Binary Traders Forum');
             $message->subject('Investment Complete');
         });
 

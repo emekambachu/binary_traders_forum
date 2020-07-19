@@ -91,7 +91,7 @@
 {{--    <section class="about-cta-box has-dot-pattern text-center sec-pad">--}}
 {{--        <div class="container">--}}
 {{--            <h3 style="color: #f1f1f1; font-weight: bold;">No Compromise Guarantee</h3>--}}
-{{--            <p>Digital Metrics Investment proffers their clients with some very well managed investment portfolios that offer a higher return on their investment as compared to a self-managed trading account.<br>--}}
+{{--            <p>Binary Traders Forum proffers their clients with some very well managed investment portfolios that offer a higher return on their investment as compared to a self-managed trading account.<br>--}}
 {{--                This is contrary to the much accepted past belief that all forex investment companies are a front for money laundering scheme that was established to rip off the client’s hard-earned money. We have some very skilled and experienced traders who handle and manage investor accounts for different types of clients. </p>--}}
 {{--        </div><!-- /.container -->--}}
 {{--    </section>--}}

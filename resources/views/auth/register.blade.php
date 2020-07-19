@@ -334,7 +334,7 @@
 {{--                            </div><!-- /.icon-box -->--}}
 {{--                            <div class="text-box">--}}
 {{--                                <h3>Ask Anything Here :</h3>--}}
-{{--                                <p>info@digitalmetricsinvest.com</p>--}}
+{{--                                <p>info@binarytradersforum.com</p>--}}
 {{--                            </div><!-- /.text-box -->--}}
 {{--                        </li>--}}
 {{--                    </ul><!-- /.info-items -->--}}

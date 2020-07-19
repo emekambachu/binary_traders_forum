@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') - Digital Metrics Investment</title>
+    <title>@yield('title') - Binary Traders Forum</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('digital_metrics_logoonly.png') }}" />
     <!-- Bootstrap CSS -->
@@ -254,7 +254,7 @@
                 </ul>
             </div>
             <div class="col-lg-6 text-right">
-                Copyright {{ date('Y') }} <a href="">Digital Metrics Investment</a> All Rights Reserved.
+                Copyright {{ date('Y') }} <a href="">Binary Traders Forum</a> All Rights Reserved.
             </div>
         </div>
     </div>

@@ -27,7 +27,7 @@ class AdminController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function index()
     {
@@ -74,9 +74,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.verify-user', $data, static function ($message) use ($data) {
-            $message->from('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
-            $message->to($data['email'], $data['name'])->cc('info@digitalmetricsinvest.com');
-            $message->replyTo('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->from('info@binarytradersforum.com', 'Binary Traders Forum');
+            $message->to($data['email'], $data['name'])->cc('info@binarytradersforum.com');
+            $message->replyTo('info@binarytradersforum.com', 'Binary Traders Forum');
             $message->subject($data['status']);
         });
 
@@ -149,9 +149,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.fund-wallet', $data, static function ($message) use ($data) {
-            $message->from('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
-            $message->to($data['email'], $data['name'])->cc('info@digitalmetricsinvest.com');
-            $message->replyTo('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->from('info@binarytradersforum.com', 'Binary Traders Forum');
+            $message->to($data['email'], $data['name'])->cc('info@binarytradersforum.com');
+            $message->replyTo('info@binarytradersforum.com', 'Binary Traders Forum');
             $message->subject('Credit Transfer of $' . number_format($data['amount']) . ' From Investment');
         });
 

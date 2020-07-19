@@ -106,9 +106,9 @@ class RegisterController extends Controller
 
         // Send Email to registered User
         Mail::send('emails.registration-complete', $data, static function ($message) use ($data) {
-            $message->from('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
-            $message->to($data['email'], $data['name'])->cc('info@digitalmetricsinvest.com');
-            $message->replyTo('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->from('info@binarytradersforum.com', 'Binary Traders Forum');
+            $message->to($data['email'], $data['name'])->cc('info@binarytradersforum.com');
+            $message->replyTo('info@binarytradersforum.com', 'Binary Traders Forum');
             $message->subject('Registration Complete');
         });
 

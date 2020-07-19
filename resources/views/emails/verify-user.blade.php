@@ -8,4 +8,4 @@
 </p>
 
 <p align="center">Need more information?<br>
-    Please contact <strong>info@digitalmetricsinvest.com</strong>.</p>
+    Please contact <strong>info@binarytradersforum.com</strong>.</p>
