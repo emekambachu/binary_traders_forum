@@ -41,7 +41,7 @@
     <div class="iq-sidebar">
         <div class="iq-navbar-logo d-flex justify-content-between">
             <a href="" class="header-logo">
-                <img src="{{ asset('digital_metrics_logo.png') }}" class="img-fluid rounded" alt="">
+                <img src="{{ asset('binary_traders_forum_logo.png') }}" class="img-fluid rounded" alt="">
             </a>
             <div class="iq-menu-bt align-self-center">
                 <div class="wrapper-menu">
@@ -90,7 +90,7 @@
                     </div>
                     <div class="iq-navbar-logo d-flex justify-content-between ml-3">
                         <a href="" class="header-logo">
-                            <img src="{{ asset('digital_metrics_logo.png') }}" class="img-fluid rounded" alt="">
+                            <img src="{{ asset('binary_traders_forum_logo.png') }}" class="img-fluid rounded" alt="">
                         </a>
                     </div>
                 </div>

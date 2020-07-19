@@ -1,5 +1,5 @@
 
-<img src="{{ asset('digital_metrics_logo.png') }}" width="100">
+<img src="{{ asset('binary_traders_forum_logo.png') }}" width="100">
 
 <h3>Dear {{ $name }},</h3>
 

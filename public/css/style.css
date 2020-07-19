@@ -3560,7 +3560,7 @@ select {
   background: #0972C9;
 }
 .price-table .table-header .price {
-  font-size: 72px;
+  font-size: 30px;
   line-height: 40px;
   color: #0B2239;
   font-weight: 600;

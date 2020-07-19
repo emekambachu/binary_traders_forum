@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
+    @yield('top-assets')
+
 </head>
 
 <body>

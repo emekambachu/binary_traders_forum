@@ -5,96 +5,88 @@
 @endsection
 
 @section('contents')
-    <section class="inner-banner has-dot-pattern">
+    <section class="page-title-section">
         <div class="container">
-            <h2>Get Touch With Us</h2>
-            <span class="decor-line"></span>
-            <ul class="list-inline bread-cumb">
-                <li><a href="{{ url('/') }}">Home</a></li>
-                <li><span>Contact us</span></li>
-            </ul><!-- /.list-inline -->
-        </div><!-- /.container -->
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <h2 class="text-uppercase text-white mrb-10">Contact us</h2>
+                    <ul class="mb-0 justify-content-center">
+                        <li class="breadcrumb-item"><a href="{{ url('/') }}" class="text-white">Home</a></li>
+                        <li class="breadcrumb-item" style="color: #3d9bef;">Contact us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="sec-pad contact-page">
+    <section class="contact-section pdt-100 pdb-95 pdb-md-110" data-background="{{ asset('images/bg/abs-bg7.png') }}" style="background-image: url(&quot;{{ asset('images/bg/abs-bg7.png') }}&quot;);">
         <div class="container">
-            <div class="col-md-8">
-
-                <div class="sec-title">
-                    <h2>Contact Form</h2>
-                    <span class="decor-line">
-					<span class="decor-line-inner"></span>
-				</span>
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2 class="mrb-80 f-weight-400 title-under-line">Our<span class="f-weight-700 text-primary-color"> Address</span></h2>
+                    <div class="contact-block d-flex mrb-30">
+                        <div class="contact-icon">
+                            <i class="webex-icon-map1"></i>
+                        </div>
+                        <div class="contact-details mrl-30">
+                            <h5 class="icon-box-title mrb-10">Our Address</h5>
+                            <p class="mrb-0">32 Dora Creek, tuntable creek,</p>
+                        </div>
+                    </div>
+                    <div class="contact-block d-flex mrb-30">
+                        <div class="contact-icon">
+                            <i class="webex-icon-Phone2"></i>
+                        </div>
+                        <div class="contact-details mrl-30">
+                            <h5 class="icon-box-title mrb-10">Phone Number</h5>
+                            <p class="mrb-0">+12 125-528-8542</p>
+                        </div>
+                    </div>
+                    <div class="contact-block d-flex">
+                        <div class="contact-icon">
+                            <i class="webex-icon-envelope"></i>
+                        </div>
+                        <div class="contact-details mrl-30">
+                            <h5 class="icon-box-title mrb-10">Email Us</h5>
+                            <p class="mrb-0">info@binarytradersforum.com</p>
+                        </div>
+                    </div>
                 </div>
-
-                <form action="" class="contact-form" novalidate="novalidate">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-grp">
-                                <input type="text" name="name" placeholder="Your Name *">
-                            </div><!-- /.form-grp -->
-                        </div><!-- /.col-md-6 -->
-                        <div class="col-md-6">
-                            <div class="form-grp">
-                                <input type="text" name="email" placeholder="Email Address *">
-                            </div><!-- /.form-grp -->
-                        </div><!-- /.col-md-6 -->
-                        <div class="col-md-6">
-                            <div class="form-grp">
-                                <input type="text" name="phone" placeholder="Phone">
-                            </div><!-- /.form-grp -->
-                        </div><!-- /.col-md-6 -->
-                        <div class="col-md-6">
-                            <div class="form-grp">
-                                <input type="text" name="subject" placeholder="Subject*">
-                            </div><!-- /.form-grp -->
-                        </div><!-- /.col-md-6 -->
-                        <div class="col-md-12">
-                            <div class="form-grp">
-                                <textarea name="message" placeholder="Message*"></textarea>
-                            </div><!-- /.form-grp -->
-                            <button type="submit" class="thm-btn">Submit Now</button>
-                        </div><!-- /.col-md-6 -->
-                    </div><!-- /.row -->
-                    <div class="form-result"></div><!-- /.form-result -->
-                </form>
-            </div><!-- /.col-md-8 -->
-
-            <div class="col-md-4">
-                <div class="sec-title">
-                    <h2>Get Touch With Us</h2>
-                    <span class="decor-line">
-					<span class="decor-line-inner"></span>
-				</span>
+                <div class="col-lg-7">
+                    <div class="contact-form mrb-md-40">
+                        <h2 class="mrb-80 f-weight-400 title-under-line">Send<span class="f-weight-700 text-primary-color"> Message</span></h2>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mrb-25">
+                                        <input type="text" placeholder="Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mrb-25">
+                                        <input type="text" placeholder="Phone" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group mrb-25">
+                                        <input type="email" placeholder="Email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group mrb-25">
+                                        <textarea rows="4" placeholder="Messages" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="form-group">
+                                        <button type="submit" class="cs-btn-one btn-md btn-round btn-primary-color element-shadow">Submit Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="contact-info-box">
-                    <p>There are many variations off passages available, but the majority have suffered alterattions in some forms by injected humour look events slightly believable ut  seds do eiusmod tempor incididunt labore.</p>
-                    <ul class="info-items">
-                        <li>
-                            <div class="icon-box">
-                                <div class="inner-box">
-                                    <i class="fn-icon-international-delivery"></i>
-                                </div><!-- /.inner-box -->
-                            </div><!-- /.icon-box -->
-                            <div class="text-box">
-                                <h3>Address :</h3>
-                                <p>555 west 5th street, 35th Floor, Los Angeles, California</p>
-                            </div><!-- /.text-box -->
-                        </li>
-                        <li>
-                            <div class="icon-box">
-                                <div class="inner-box">
-                                    <i class="fa fa-envelope"></i>
-                                </div><!-- /.inner-box -->
-                            </div><!-- /.icon-box -->
-                            <div class="text-box">
-                                <h3>Ask Anything Here :</h3>
-                                <p>info@digitalmetricsinvest.com</p>
-                            </div><!-- /.text-box -->
-                        </li>
-                    </ul><!-- /.info-items -->
-                </div><!-- /.contact-info-box -->
-            </div><!-- /.col-md-8 -->
-        </div><!-- /.container -->
+            </div>
+        </div>
     </section>
 @endsection
