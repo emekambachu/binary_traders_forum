@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->string('country');
             $table->string('state')->nullable();
             $table->string('address')->nullable();
+            $table->string('bitcoin_wallet')->nullable();
             $table->boolean('is_active')->default(1);
             $table->rememberToken();
             $table->timestamps();

@@ -60,6 +60,7 @@ class RegisterController extends Controller
             'country' => ['required', 'string'],
             'state' => ['nullable', 'string'],
             'address' => ['nullable', 'string', 'max:100'],
+            'bitcoin_wallet' => ['nullable', 'string'],
         ]);
     }
 
@@ -102,6 +103,7 @@ class RegisterController extends Controller
             'country' => $data['country'],
             'state' => $data['state'],
             'address' => $data['address'],
+            'bitcoin_wallet' => $data['bitcoin_wallet'],
         ]);
 
         // Send Email to registered User

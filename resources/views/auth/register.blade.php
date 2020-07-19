@@ -114,6 +114,19 @@
                                     </div>
                                 </div>
 
+                                <div class="col-lg-12">
+                                    <div class="form-group mrb-25">
+                                        <label>Bitcoin Wallet Address</label>
+                                        <input class="form-control @error('bitcoin_wallet') is-invalid @enderror" type="text"
+                                               name="bitcoin_wallet" placeholder="Bitcoin Wallet" value="{{ old('bitcoin_wallet') }}">
+                                        @error('bitcoin_wallet')
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
                                 <div class="col-lg-6">
                                     <div class="form-group mrb-25">
                                         <label>Password</label>
@@ -180,6 +193,7 @@
                                         <button type="submit" class="cs-btn-one btn-md btn-round btn-primary-color element-shadow">Submit Now</button>
                                     </div>
                                 </div>
+
                             </div>
                         </form>
                     </div>

@@ -26,6 +26,7 @@ class User extends Authenticatable
         'address',
         'image',
         'wallet_id',
+        'bitcoin_wallet',
         'is_active'
     ];
 
