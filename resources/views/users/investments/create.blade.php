@@ -17,7 +17,7 @@
                             </div>
                         </div>
                         <div class="iq-card-body" style="margin: 0 auto;">
-                            <p><strong>1BxLSTsk4mgvspTmC3YPdEJts2JRJ9YzTL</strong></p>
+                            <p><strong>1DnWxke6SCiMQhc7jNthFXYZ4qTKJTBpEY</strong></p>
                             <div class="card iq-mb-2">
                                 <img width="300" src="{{ asset('bitcoin_scan.jpeg') }}">
                             </div>
