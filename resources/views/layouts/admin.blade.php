@@ -59,6 +59,8 @@
                         <i class="las la-user iq-arrow-left"></i><span>Manage Users</span></a></li>
                     <li><a href="{{ route('manage-investments') }}" class="iq-waves-effect">
                             <i class="las la-money iq-arrow-left"></i><span>Manage Investments</span></a></li>
+                    <li><a href="{{ route('withdrawal-requests') }}" class="iq-waves-effect">
+                            <i class="las la-money iq-arrow-left"></i><span>Withdrawal Requests</span></a></li>
                     <li><a href="{{ route('investment-packages.index') }}" class="iq-waves-effect">
                         <i class="las la-gear iq-arrow-left"></i><span>Investment Packages</span></a></li>
                     <li><a href="{{ route('admin-logout') }}" class="iq-waves-effect">
@@ -93,6 +95,7 @@
                         <li><a style="font-size: 12px; margin-top: 20px;" href="{{ route('user-dashboard') }}"><span>Dashboard</span></a></li>
                         <li><a style="font-size: 12px; margin-top: 20px;" href="{{ route('manage-users') }}"><span>Manage Users</span></a></li>
                         <li><a style="font-size: 12px; margin-top: 20px;" href="{{ route('manage-investments') }}"><span>Manage Investments</span></a></li>
+                        <li><a style="font-size: 12px; margin-top: 20px;" href="{{ route('withdrawal-requests') }}"><span>Withdrawal Requests</span></a></li>
                         <li><a style="font-size: 12px; margin-top: 20px;" href="{{ route('investment-packages.index') }}"><span>Investment Packages</span></a></li>
                         <li><a style="font-size: 12px; margin-top: 20px;" href="{{ route('admin-logout') }}"><span>Logout</span></a></li>
 

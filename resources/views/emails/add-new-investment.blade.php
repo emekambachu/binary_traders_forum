@@ -4,8 +4,8 @@
 <h3>Dear {{ $name }},</h3>
 
 <p>
-    Your Investment was successful.<br>
-    Once your payment has been approved, your waller would be funded.<br><br>
+    Your Investment has been Initiated.<br>
+    Once payment is approved, your wallet would be funded in 24 hours.<br><br>
 </p>
 
 <p><strong>Below are your payment details:</strong></p>

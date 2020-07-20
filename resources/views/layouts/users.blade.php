@@ -70,6 +70,10 @@
                             <i class="las la-gear iq-arrow-left"></i><span>Account Settings</span></a>
                     </li>
                     <li>
+                        <a href="{{ url('user/withdrawal') }}" class="iq-waves-effect">
+                            <i class="las la-sign-out iq-arrow-left"></i><span>Withdraw Funds</span></a>
+                    </li>
+                    <li>
                         <a href="{{ route('user-logout') }}" class="iq-waves-effect">
                             <i class="las la-sign-out iq-arrow-left"></i><span>Logout</span></a>
                     </li>
@@ -103,6 +107,7 @@
                         <li><a style="font-size: 12px; margin-top: 20px;" href="{{ route('user-dashboard') }}"><span>Dashboard</span></a></li>
                         <li><a style="font-size: 12px; margin-top: 20px;" href="{{ route('investment.index') }}"><span>Your Investments</span></a></li>
                         <li><a style="font-size: 12px; margin-top: 20px;" href="{{ route('investment.create') }}"><span>New Investment</span></a></li>
+                        <li><a style="font-size: 12px; margin-top: 20px;" href="{{ url('user/withdrawal') }}"><span>Withdraw Funds</span></a></li>
                         <li><a style="font-size: 12px; margin-top: 20px;" href="{{ url('user/account-settings') }}"><span>Account Settings</span></a></li>
                         <li><a style="font-size: 12px; margin-top: 20px;" href="{{ route('user-logout') }}"><span>Logout</span></a></li>
 

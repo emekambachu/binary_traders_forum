@@ -55,4 +55,8 @@ class User extends Authenticatable
     public function investments(){
         return $this->hasMany(Investment::class);
     }
+
+    public function withdrawals(){
+        return $this->hasMany(Withdrawal::class);
+    }
 }

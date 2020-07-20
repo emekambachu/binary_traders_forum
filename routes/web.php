@@ -48,8 +48,13 @@ Route::get('users/dashboard', 'UserController@index')->name('user-dashboard');
 Route::resource('users/investment', 'InvestmentController');
 Route::post('user/submit-investment', 'InvestmentController@submitInvestment');
 
+// Account Settings
 Route::get('user/account-settings', 'UserController@accountSettings');
 Route::post('user/update-account', 'UserController@updateAccount');
+
+// Withdrawal
+Route::get('user/withdrawal', 'UserController@withdrawal');
+Route::post('user/withdraw-amount', 'UserController@withdrawAmount');
 
 
 // Admin Section
@@ -68,12 +73,6 @@ Route::get('admin/dashboard', 'AdminController@index')->name('admin-dashboard');
 //Admin Manage Users Page
 Route::get('admin/manage-users', 'AdminController@manageUsers')->name('manage-users');
 
-//Admin Manage Investments
-Route::get('admin/manage-investments', 'AdminController@manageInvestments')->name('manage-investments');
-
-// Admin Manage Investment Packages
-Route::resource('admin/investment-packages', 'InvestmentPackageController');
-
 // Admin Approve User
 Route::post('admin/approve-user/{id}', ['uses' => 'AdminController@approveUser']);
 
@@ -87,3 +86,25 @@ Route::get('admin/fund-wallet/{id}',
 
 // Fund User Form
 Route::post('admin/fund-wallet/{id}', ['uses' => 'AdminController@fundWallet']);
+
+//Admin Manage Investments
+Route::get('admin/manage-investments', 'AdminController@manageInvestments')->name('manage-investments');
+
+// Admin Approve Investment
+Route::post('admin/approve-investment/{id}', ['uses' => 'AdminController@approveInvestment']);
+
+// Admin Manage Investment Packages
+Route::resource('admin/investment-packages', 'InvestmentPackageController');
+
+//Add User Investment Page
+Route::get('admin/add-user-investment/{id}',
+    ['as'=>'admin.add-user-investment', 'uses'=>'AdminController@addUserInvestmentPage']
+);
+
+//Add User Investment Form
+Route::post('admin/add-user-investment/{id}', ['uses' => 'AdminController@addUserInvestment']);
+
+//Admin Withdrawal Requests
+Route::get('admin/withdrawal-requests', 'AdminController@withdrawalRequests')->name('withdrawal-requests');
+// Admin Approve Withdrawals
+Route::post('admin/approve-withdrawal/{id}', ['uses' => 'AdminController@approveWithdrawal']);

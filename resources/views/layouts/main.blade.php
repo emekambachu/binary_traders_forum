@@ -39,7 +39,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 header-top-left-part">
-                        <span class="address"><i class="webexflaticon flaticon-placeholder-1"></i> 121 King Street, Melbourne</span>
+                        <span class="address"><i class="webexflaticon flaticon-placeholder-1"></i> No.17 Addison Ave,Palo Alto, California</span>
                         <span class="phone"><i class="webexflaticon flaticon-send"></i> info@binarytradersforum.com</span>
                     </div>
                     <div class="col-lg-6 header-top-right-part text-right">
@@ -140,7 +140,7 @@
                                     <h4 class="mrb-10">Office Address</h4>
                                     <ul class="list-items">
                                         <li><span class="fa fa-map-marker mrr-10 text-primary-color"></span>
-                                            121 King Street, Australia</li>
+                                            No.17 Addison Ave,Palo Alto, California</li>
                                         <li><span class="fa fa-envelope mrr-10 text-primary-color"></span>
                                             info@binarytradersforum.com</li>
                                         <li><span class="fa fa-phone mrr-10 text-primary-color"></span>
@@ -177,7 +177,7 @@
                     <div class="widget footer-widget">
                         <img src="{{ asset('binary_traders_forum_logo.png') }}" alt="" class="mrb-20">
                         <address class="mrb-25">
-                            <p class="text-light-gray">32 Dora Creek, tuntable creek, New South Wales 2480, Australia</p>
+                            <p class="text-light-gray">No.17 Addison Ave,Palo Alto, California</p>
                             <div class="display-inline-block mrb-5"><a href="#" class="text-light-gray"><i class="fa fa-phone mrr-10"></i>+088 234 432 15565</a></div>
                             <div class="display-inline-block mrb-5"><a href="#" class="text-light-gray"><i class="fa fa-envelope mrr-10"></i>info@binarytradersforum.com</a></div>
                         </address>

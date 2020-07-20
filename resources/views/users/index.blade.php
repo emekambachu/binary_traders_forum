@@ -91,10 +91,16 @@
                                         <h6 class="card-title text-uppercase text-secondary mb-0">Wallet Balance</h6>
                                         <span class="h2 text-dark mb-0 d-inline-block w-100">${{ $user->wallet->amount }}</span>
                                     </div>
+                                    <div class="col-lg-12 mt-3">
+                                        <h6 class="card-title text-uppercase text-secondary mb-0">Withdrawals</h6>
+                                        <span class="h2 text-dark mb-0 d-inline-block w-100">
+                                            ${{ $total_withdrawals ? $total_withdrawals->sum('amount') : 0 }}</span>
+                                    </div>
+                                    <a href="{{ url('user/withdrawal') }}">
+                                        <button class="btn btn-success text-amber ml-3">Withdraw Funds</button>
+                                    </a>
                                 </div>
-                                <p class="mb-0 text-muted mt-3">
-                                    <span class="badge badge-primary mr-2"><i class="ri-arrow-up-fill"></i> 3.48%</span>
-                                </p>
+
                             </div>
                         </div>
                     </div>

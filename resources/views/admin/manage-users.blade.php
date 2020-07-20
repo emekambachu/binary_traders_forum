@@ -47,6 +47,10 @@
                                                         <button class="btn btn-info btn-sm">Fund Wallet</button>
                                                     </a>
 
+                                                    <a href="{{ url('admin/add-user-investment/'.$user->id) }}">
+                                                        <button class="btn btn-info btn-sm">Add Investment</button>
+                                                    </a>
+
                                                     <form method="POST" action="{{ action('AdminController@approveUser', $user->id) }}">
                                                         @csrf
                                                         <button type="submit" class="btn btn-warning btn-sm">
@@ -82,8 +86,16 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+
+                <div class="col-md-6 col-md-12">
+                    <nav aria-label="Page navigation mb-3">
+                        @if ($users->lastPage() > 1)
+                            {{ $users->links() }}
+                        @endif
+                    </nav>
+                </div>
+
             </div>
         </div>
     </div>

@@ -14,7 +14,7 @@ class InvestmentController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\RedirectResponse
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
@@ -33,7 +33,7 @@ class InvestmentController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\RedirectResponse
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function create()
     {
@@ -60,11 +60,11 @@ class InvestmentController extends Controller
             return redirect()->back();
         }
 
-        //Generate Tracking Number
+        //Generate Investment ID
         function InvestmentId($length = 5){
             $characters = '0123456789';
             $charactersLength = strlen($characters);
-            $randomString = 'DMI-';
+            $randomString = 'BTF-';
             for ($i = 0; $i < $length; $i++) {
                 $randomString .= $characters[random_int(0, $charactersLength - 1)];
             }
@@ -96,9 +96,8 @@ class InvestmentController extends Controller
             $message->subject('Investment Complete');
         });
 
-        Session::flash('success', 'Payment Successful,  your wallet would be funded once payment is approved');
+        Session::flash('success', 'This Investment has been Initiated, your wallet will be funded once payment is approved');
         return redirect()->back();
-
     }
 
     /**

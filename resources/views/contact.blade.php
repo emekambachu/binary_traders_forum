@@ -30,7 +30,7 @@
                         </div>
                         <div class="contact-details mrl-30">
                             <h5 class="icon-box-title mrb-10">Our Address</h5>
-                            <p class="mrb-0">32 Dora Creek, tuntable creek,</p>
+                            <p class="mrb-0">No.17 Addison Ave,Palo Alto, California</p>
                         </div>
                     </div>
                     <div class="contact-block d-flex mrb-30">

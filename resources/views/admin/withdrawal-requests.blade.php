@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-    Manage Investments
+    Withdrawal Requests
 @endsection
 
 @section('contents')
@@ -13,50 +13,53 @@
                     <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                             <div class="iq-header-title" style="display: inline-block;">
-                                <h4 style="float: left;" class="card-title mr-2">Manage Investments</h4>
+                                <h4 style="float: left;" class="card-title mr-2">Manage Withdrawals</h4>
                             </div>
                             @include('includes.alerts')
                         </div>
                         <div class="iq-card-body">
-                            <p>Your current investments are displayed here</p>
+                            <p>Manage User Withdrawals here</p>
                             <div class="table-responsive">
-                                @if($investments->count() > 0)
+                                @if($withdrawals->count() > 0)
                                     <table id="datatable" class="table table-striped table-bordered">
                                         <thead>
                                         <tr>
                                             <th scope="col">User</th>
                                             <th scope="col">Email</th>
-                                            <th scope="col">Investment ID</th>
-                                            <th scope="col">Package</th>
+                                            <th scope="col">Wallet Balance / Withdrawal Tax</th>
                                             <th scope="col">Amount</th>
+                                            <th scope="col">Bitcoin Wallet</th>
                                             <th scope="col">Date</th>
                                             <th scope="col">Status</th>
                                             <th scope="col">Action</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($investments as $invest)
-                                            @if($invest->user)
-                                            <tr>
-                                                <td>{{ $invest->user ? $invest->user->name : 'User Not Found' }}</td>
-                                                <td>{{ $invest->user ? $invest->user->email : 'User Not Found' }}</td>
-                                                <td>{{ $invest->invest_id }}</td>
-                                                <td>{{ $invest->investmentPackage ? $invest->investmentPackage->name : '' }}</td>
-                                                <td>${{ number_format($invest->amount) }}</td>
-                                                <td>{{ $invest->created_at->format('d M Y') }}</td>
-                                                <td>{{ $invest->is_approved ? 'Approved' : 'Unapproved' }}</td>
-                                                <td>
-                                                    <form method="POST" action="{{ action('AdminController@approveInvestment', $invest->id) }}">
-                                                        @csrf
-                                                        <button type="submit" class="btn btn-warning btn-sm">
-                                                            {{$invest->is_approved ? 'Cancel Investment' : 'Approve Investment' }}
-                                                        </button>
-                                                    </form>
-                                                    <a href="{{ url('admin/fund-wallet/'.$invest->user->id) }}">
-                                                        <button class="btn btn-info btn-sm">Fund Wallet</button>
-                                                    </a>
-                                                </td>
-                                            </tr>
+                                        @foreach($withdrawals as $withdraw)
+                                            @if($withdraw->user)
+                                                <tr>
+                                                    <td>{{ $withdraw->user->name }}</td>
+                                                    <td>{{ $withdraw->user->email }}</td>
+                                                    <td>
+                                                        ${{ $withdraw->user->wallet->amount }} /
+                                                        ${{ 10/100 * $withdraw->user->wallet->amount }}
+                                                    </td>
+                                                    <td>${{ $withdraw->amount }}</td>
+                                                    <td>{{ $withdraw->user->bitcoin_wallet }}</td>
+                                                    <td>{{ $withdraw->created_at->format('d M Y') }}</td>
+                                                    <td>{{ $withdraw->is_approved ? 'Approved' : 'Pending' }}</td>
+                                                    <td>
+                                                        <form method="POST" action="{{ action('AdminController@approveWithdrawal', $withdraw->id) }}">
+                                                            @csrf
+                                                            <button type="submit" class="btn btn-warning btn-sm">
+                                                                {{$withdraw->is_approved ? 'Cancel Withdraw' : 'Approve Withdraw' }}
+                                                            </button>
+                                                        </form>
+                                                        <a href="{{ url('admin/fund-wallet/'.$withdraw->user->id) }}">
+                                                            <button class="btn btn-info btn-sm">Fund Wallet</button>
+                                                        </a>
+                                                    </td>
+                                                </tr>
                                             @endif
                                         @endforeach
                                         </tbody>
@@ -83,8 +86,8 @@
 
                 <div class="col-md-6 col-md-12">
                     <nav aria-label="Page navigation mb-3">
-                        @if ($investments->lastPage() > 1)
-                            {{ $investments->links() }}
+                        @if ($withdrawals->lastPage() > 1)
+                            {{ $withdrawals->links() }}
                         @endif
                     </nav>
                 </div>
