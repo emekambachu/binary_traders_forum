@@ -25,6 +25,8 @@
 
     @yield('top-assets')
 
+    <script src="//code.jivosite.com/widget/dIakGEJqXw" async></script>
+
 </head>
 
 <body>

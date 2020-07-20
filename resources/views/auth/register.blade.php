@@ -105,8 +105,8 @@
 
                                 <div class="col-lg-6">
                                     <div class="form-group mrb-25">
-                                        <label>ID Card</label>
-                                        <input class="form-control @error('image') is-invalid @enderror" type="file" name="image" required>
+                                        <label>ID Card or Photo</label>
+                                        <input class="form-control @error('image') is-invalid @enderror" type="file" name="image">
                                         @error('image')
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong></span>
