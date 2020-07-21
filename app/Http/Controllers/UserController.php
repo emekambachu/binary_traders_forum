@@ -35,9 +35,19 @@ class UserController extends Controller
 
         $investments = Investment::where('user_id', Auth::user()->id)->orderBy('created_at', 'desc')->get();
 
-        $totalInvestments = Investment::where('user_id', Auth::user()->id)->sum('amount');
+        $totalInvestments = Investment::where([
 
-        $recentInvestment = Investment::where('user_id', Auth::user()->id)->orderBy('created_at', 'desc')->get()->first();
+            ['user_id', Auth::user()->id],
+            ['is_approved', true],
+
+        ])->sum('amount');
+
+        $recentInvestment = Investment::where([
+
+            ['user_id', Auth::user()->id],
+            ['is_approved', true],
+
+        ])->orderBy('created_at', 'desc')->get()->first();
 
         $total_withdrawals = Withdrawal::where([
 
