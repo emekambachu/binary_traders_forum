@@ -34,7 +34,7 @@
                         </div>
                         <div class="contact-details mrl-30">
                             <h5 class="icon-box-title mrb-10">Our Address</h5>
-                            <p class="mrb-0">32 Dora Creek, tuntable creek,</p>
+                            <p class="mrb-0">No.17 Addison Ave,Palo Alto, California</p>
                         </div>
                     </div>
                     <div class="contact-block d-flex mrb-30">
@@ -150,7 +150,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group mrb-25">
                                         <label>Country</label>
-                                        <select class="form-control" id="country" name="country" required></select>
+                                        <select id="country" name="country" required></select>
                                         @error('country')
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -162,7 +162,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group mrb-25">
                                         <label>State</label>
-                                        <select class="form-control" id="state" name="state"></select>
+                                        <select id="state" name="state"></select>
                                         @error('state')
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
