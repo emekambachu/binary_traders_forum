@@ -50,16 +50,6 @@
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
-                        <div class="language">
-                            <a class="language-btn" href="#"><i class="webexflaticon flaticon-internet"></i> English</a>
-                            <ul class="language-dropdown">
-                                <li><a href="#">English</a></li>
-                                <li><a href="#">Bangla</a></li>
-                                <li><a href="#">French</a></li>
-                                <li><a href="#">Spanish</a></li>
-                                <li><a href="#">Arabic</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -67,6 +57,7 @@
         <div class="header-middle">
             <div class="container">
                 <div class="row">
+                    <div class="col-12" style="margin: 0 auto;" id="google_translate_element"></div>
                     <div class="col-md-12 d-flex align-items-center justify-content-between">
                         <a class="navbar-brand logo" href="{{ url('/') }}">
                             <img id="logo-image" class="img-center" src="{{ asset('binary_traders_forum_logo.png') }}" alt="">
@@ -287,6 +278,15 @@
 <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 
 </html>
