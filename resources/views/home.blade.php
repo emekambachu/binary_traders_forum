@@ -58,6 +58,21 @@ Home
     <!-- END REVOLUTION SLIDER -->
 
     <!-- About Section Start -->
+    <section class="about-section pdt-110 pdb-md-40" data-background="{{ asset('images/bg/abs-bg7.png') }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xl-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
+                    <h2 class="title-under-line mrb-70">About Binary Traders Forum</h2>
+                    <p class="mrb-50">
+                        Binary Traders Forum is a capital investment company that deals on bitcoin mining and trading,forex and stocks,synthetic indices and all other crypto currencies and digital market. The need for a company like these arose due to investors losing their capital to brokers in the digital market or little or no growth at all to their crypto currency due to lack of experience and adequate machinery to analyze and forecast the market.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- About Section Start -->
     <section class="about-section pdt-110 pdb-110 pdb-md-40" data-background="{{ asset('images/bg/abs-bg7.png') }}">
         <div class="container">
             <div class="row mrb-80 mrb-lg-70">
@@ -410,7 +425,6 @@ Home
                 </div>
             </div>
         </div>
-
     </section>
     <!-- News Section End -->
 
