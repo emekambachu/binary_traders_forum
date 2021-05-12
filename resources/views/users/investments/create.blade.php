@@ -17,9 +17,14 @@
                             </div>
                         </div>
                         <div class="iq-card-body" style="margin: 0 auto;">
-                            <p><strong>1DnWxke6SCiMQhc7jNthFXYZ4qTKJTBpEY</strong></p>
-                            <div class="card iq-mb-2">
+                            <p>BTC: <strong>1DnWxke6SCiMQhc7jNthFXYZ4qTKJTBpEY</strong></p>
+                            <div class="card iq-mb-2 mb-5">
                                 <img width="300" src="{{ asset('bitcoin_scan.jpeg') }}">
+                            </div>
+
+                            <p>ETH: <strong>0x9e4483991D2f3c49bD2a1Db947D9649B4ABEF5AF</strong></p>
+                            <div class="card iq-mb-2">
+                                <img width="300" src="{{ asset('eth_wallet_barcode.jpg') }}">
                             </div>
                         </div>
                     </div>
