@@ -13,7 +13,7 @@
                     <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                             <div class="iq-header-title">
-                                <h4 class="card-title"> Make payment using the bitcoin address below</h4>
+                                <h4 class="card-title"> Make payment using the bitcoin and Etherium address below</h4>
                             </div>
                         </div>
                         <div class="iq-card-body" style="margin: 0 auto;">
@@ -39,7 +39,7 @@
                         </div>
                         @include('includes.alerts')
                         <div class="iq-card-body">
-                            <p><strong>After making your payment, submit you bitcoin payment details.</strong></p>
+                            <p><strong>After making your payment, submit you Bitcoin or Etherium payment details.</strong></p>
                             <form method="post" action="{{ url('user/submit-investment') }}">
                                 @csrf
                                 <div class="form-row">
