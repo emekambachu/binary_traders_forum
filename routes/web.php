@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GithubDeploymentController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -108,3 +109,7 @@ Route::post('admin/add-user-investment/{id}', ['uses' => 'AdminController@addUse
 Route::get('admin/withdrawal-requests', 'AdminController@withdrawalRequests')->name('withdrawal-requests');
 // Admin Approve Withdrawals
 Route::post('admin/approve-withdrawal/{id}', ['uses' => 'AdminController@approveWithdrawal']);
+
+//Github Deployment
+Route::post('github/deploy', [GithubDeploymentController::class, 'deploy']);
+Route::post('github/deploy/test', [GithubDeploymentController::class, 'deployTest']);
