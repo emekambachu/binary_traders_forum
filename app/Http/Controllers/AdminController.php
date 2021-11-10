@@ -93,7 +93,7 @@ class AdminController extends Controller
 
         // Check if image record exists in table
         if(!empty($user->image) && File::exists(public_path() . '/photos/' . $user->image)) {
-            FILE::delete(public_path() . '/photos/' . $user->image->img);
+            FILE::delete(public_path() . '/photos/' . $user->image);
 //                unlink(public_path() . '/photos/' . $user->image->img);
             $user->delete();
         } else{
