@@ -22,10 +22,10 @@
                                 <img width="300" src="{{ asset('bitcoin_scan.jpeg') }}">
                             </div>
 
-                            <p>ETH: <strong>0x9e4483991D2f3c49bD2a1Db947D9649B4ABEF5AF</strong></p>
+                            {{-- <p>ETH: <strong>0x9e4483991D2f3c49bD2a1Db947D9649B4ABEF5AF</strong></p>
                             <div class="card iq-mb-2">
                                 <img width="300" src="{{ asset('eth_wallet_barcode.jpg') }}">
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
